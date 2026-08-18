@@ -1,0 +1,17 @@
+[
+  {
+    "id": "student_001",
+    "name": "Alex Chen",
+    "handle": "@alex_codes",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Alex",
+    "role": "Computer Science Student",
+    "university": "State Tech University",
+    "year": "Junior (3rd Year)",
+    "joined_at": "2026-01-10T00:00:00Z",
+    "preferences": {
+      "preferred_difficulty": "Intermediate",
+      "curiosity_tolerance": 0.85,
+      "hype_tolerance": 0.15
+    }
+  }
+]
