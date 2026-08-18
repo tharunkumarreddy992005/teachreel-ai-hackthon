@@ -1,0 +1,39 @@
+services:
+  # Backend FastAPI API Service
+  - type: web
+    name: techreel-ai-backend
+    env: python
+    region: oregon
+    plan: free
+    rootDir: techreel-ai/backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: MONGODB_URI
+        sync: false
+      - key: DATABASE_NAME
+        value: techreel
+      - key: DEMO_MODE
+        value: "false"
+      - key: FRONTEND_URL
+        value: "https://techreel-ai.vercel.app"
+
+  # Frontend Next.js Service
+  - type: web
+    name: techreel-ai-frontend
+    env: node
+    region: oregon
+    plan: free
+    rootDir: techreel-ai/frontend
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_VERSION
+        value: 18.18.0
+      - key: NEXT_PUBLIC_API_URL
+        fromService:
+          type: web
+          name: techreel-ai-backend
+          property: host
