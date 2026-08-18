@@ -1,0 +1,9 @@
+{
+  "name": "techreel-ai-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd techreel-ai/frontend && npm install && npm run build",
+    "start": "cd techreel-ai/frontend && npm run start"
+  }
+}
