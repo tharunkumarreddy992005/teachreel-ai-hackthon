@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "npm --prefix techreel-ai/frontend run dev",
-    "build": "npm --prefix techreel-ai/frontend run build",
-    "start": "npm --prefix techreel-ai/frontend run start",
-    "lint": "npm --prefix techreel-ai/frontend run lint"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "clsx": "^2.1.0",

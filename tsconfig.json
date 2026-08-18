@@ -18,17 +18,10 @@
         "name": "next"
       }
     ],
-    "baseUrl": ".",
     "paths": {
-      "@/*": ["./techreel-ai/frontend/*", "./*"]
+      "@/*": ["./*"]
     }
   },
-  "include": [
-    "techreel-ai/frontend/next-env.d.ts",
-    "techreel-ai/frontend/**/*.ts",
-    "techreel-ai/frontend/**/*.tsx",
-    "**/*.ts",
-    "**/*.tsx"
-  ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules", "backend", "techreel-ai/backend"]
 }
