@@ -1,0 +1,277 @@
+{
+  "scenario_name": "Latent Interest Discovery & Smart Recommendation",
+  "user_id": "student_001",
+  "user_name": "Alex Chen",
+  "description": "Student watches a stream of Java meme, coding interview joke, software engineer lifestyle, laptop comparison, and GitHub merge conflict meme. While a shallow system recommends only Java, TechReel AI infers a latent interest in Software Engineering and recommends High-Level System Design, while rejecting hype, repetition, and extreme difficulty.",
+  "watched_sequence": [
+    {
+      "reel_id": "reel_001",
+      "title": "POV: Your Java code works on the first try 😂",
+      "topic": "Java",
+      "domain": "Software Engineering",
+      "watch_percentage": 94,
+      "replay_count": 2,
+      "liked": true,
+      "saved": false,
+      "interpretation": {
+        "entertainment_intent": 91,
+        "learning_intent": 21,
+        "career_intent": 13,
+        "curiosity": 38,
+        "insight": "High watch time does not automatically mean high learning intent. Pure entertainment signal."
+      }
+    },
+    {
+      "reel_id": "reel_002",
+      "title": "FAANG Coding Interview in 30 Seconds",
+      "topic": "Coding Interview",
+      "domain": "Software Engineering",
+      "watch_percentage": 88,
+      "replay_count": 1,
+      "liked": true,
+      "saved": false,
+      "interpretation": {
+        "entertainment_intent": 85,
+        "learning_intent": 42,
+        "career_intent": 65,
+        "curiosity": 55,
+        "insight": "Moderate career anxiety and algorithm curiosity disguised as humor."
+      }
+    },
+    {
+      "reel_id": "reel_003",
+      "title": "Day in the Life: Junior vs Senior Software Engineer",
+      "topic": "Developer Lifestyle",
+      "domain": "Software Engineering",
+      "watch_percentage": 92,
+      "replay_count": 1,
+      "liked": true,
+      "saved": true,
+      "interpretation": {
+        "entertainment_intent": 80,
+        "learning_intent": 35,
+        "career_intent": 75,
+        "curiosity": 60,
+        "insight": "Strong career exploration signal. Saving the reel indicates high future reference value."
+      }
+    },
+    {
+      "reel_id": "reel_004",
+      "title": "M3 Max vs RTX 4090: Best Laptop for Developers in 2026?",
+      "topic": "Hardware",
+      "domain": "Computer Architecture",
+      "watch_percentage": 85,
+      "replay_count": 0,
+      "liked": false,
+      "saved": true,
+      "interpretation": {
+        "entertainment_intent": 50,
+        "learning_intent": 68,
+        "career_intent": 40,
+        "curiosity": 78,
+        "insight": "Developer workstation & compute hardware interest."
+      }
+    },
+    {
+      "reel_id": "reel_005",
+      "title": "When Git merge conflicts hit your team at 5:59 PM",
+      "topic": "GitHub",
+      "domain": "Software Engineering",
+      "watch_percentage": 96,
+      "replay_count": 2,
+      "liked": true,
+      "saved": false,
+      "interpretation": {
+        "entertainment_intent": 88,
+        "learning_intent": 30,
+        "career_intent": 48,
+        "curiosity": 40,
+        "insight": "Version control familiarity and collaborative software team culture."
+      }
+    }
+  ],
+  "expected_latent_interest": {
+    "primary_topic": "Software Engineering",
+    "score": 87,
+    "confidence": "High",
+    "evidence_topics": ["Java", "Coding Interview", "Developer Lifestyle", "GitHub", "Hardware"],
+    "synthesis_reasoning": "Your Java, coding interview, developer lifestyle, GitHub and hardware interactions collectively suggest a broader interest in software engineering rather than Java syntax alone."
+  },
+  "expected_interest_dna": [
+    {
+      "topic": "Software Engineering",
+      "score": 87,
+      "confidence": "High",
+      "trend": "+42%",
+      "trend_direction": "up",
+      "evidence_count": 5,
+      "domain": "Software Engineering",
+      "category": "Broad Domain"
+    },
+    {
+      "topic": "Programming",
+      "score": 81,
+      "confidence": "High",
+      "trend": "+28%",
+      "trend_direction": "up",
+      "evidence_count": 4,
+      "domain": "Software Engineering",
+      "category": "Core Foundation"
+    },
+    {
+      "topic": "DSA",
+      "score": 72,
+      "confidence": "High",
+      "trend": "+35%",
+      "trend_direction": "up",
+      "evidence_count": 2,
+      "domain": "Software Engineering",
+      "category": "Problem Solving"
+    },
+    {
+      "topic": "Developer Career",
+      "score": 64,
+      "confidence": "Medium",
+      "trend": "+19%",
+      "trend_direction": "up",
+      "evidence_count": 3,
+      "domain": "Software Engineering",
+      "category": "Career Growth"
+    },
+    {
+      "topic": "AI",
+      "score": 51,
+      "confidence": "Medium",
+      "trend": "+12%",
+      "trend_direction": "up",
+      "evidence_count": 1,
+      "domain": "Artificial Intelligence",
+      "category": "Emerging Tech"
+    },
+    {
+      "topic": "Hardware",
+      "score": 43,
+      "confidence": "Medium",
+      "trend": "+8%",
+      "trend_direction": "neutral",
+      "evidence_count": 1,
+      "domain": "Computer Architecture",
+      "category": "Infrastructure"
+    },
+    {
+      "topic": "Cloud",
+      "score": 32,
+      "confidence": "Low",
+      "trend": "+5%",
+      "trend_direction": "neutral",
+      "evidence_count": 1,
+      "domain": "Cloud Computing",
+      "category": "Infrastructure"
+    },
+    {
+      "topic": "Cybersecurity",
+      "score": 24,
+      "confidence": "Low",
+      "trend": "+2%",
+      "trend_direction": "neutral",
+      "evidence_count": 0,
+      "domain": "Cybersecurity",
+      "category": "Security"
+    }
+  ],
+  "expected_recommendation": {
+    "reel_id": "reel_006",
+    "title": "How Backend Engineers Think About System Design",
+    "category": "HLD / Backend",
+    "difficulty": "Intermediate",
+    "confidence": "High",
+    "score": 91,
+    "scores": {
+      "interest_match": 94,
+      "learning_value": 91,
+      "career_relevance": 88,
+      "credibility": 86,
+      "novelty": 79,
+      "difficulty_fit": 92
+    },
+    "why": "Your recent interactions indicate a broader software-engineering interest rather than Java-specific learning intent.",
+    "micro_learning": {
+      "headline": "30-SECOND TAKEAWAY: System Design Foundations",
+      "key_points": [
+        "1. Horizontal Scaling: Add more lightweight servers behind a Load Balancer instead of buying a larger machine.",
+        "2. Redis Caching: Intercept database reads in sub-millisecond RAM to prevent database connection saturation.",
+        "3. Message Queues (Kafka): Decouple synchronous API requests into asynchronous, resilient background workers."
+      ]
+    }
+  },
+  "rejected_candidates": [
+    {
+      "reel_id": "reel_012",
+      "title": "10 AI Tools that GUARANTEE a $200k Tech Job in 30 Days (No Coding!)",
+      "reason": "Rejected by Hype Shield: High hype (96%), unrealistic career guarantee, low technical evidence (educational value 22%).",
+      "decision": "Reject",
+      "hype_score": 96,
+      "educational_value": 22,
+      "credibility": 14
+    },
+    {
+      "reel_id": "reel_013",
+      "title": "Complete Java Tutorial for Absolute Beginners (Part 1: Hello World)",
+      "reason": "Rejected for Content Fatigue: Too repetitive. User already demonstrates familiarity with OOP/Java memes and coding humor.",
+      "decision": "Reject",
+      "hype_score": 8,
+      "educational_value": 65,
+      "credibility": 85
+    },
+    {
+      "reel_id": "reel_014",
+      "title": "Advanced Kubernetes eBPF Kernel Packet Inspection & CNI Mesh",
+      "reason": "Rejected for Difficulty Mismatch: Advanced kernel-level systems programming is too steep for current intermediate profile.",
+      "decision": "Reject",
+      "hype_score": 5,
+      "educational_value": 94,
+      "credibility": 96
+    }
+  ],
+  "emerging_interests": [
+    {
+      "topic": "AI Engineering",
+      "potential_score": 76,
+      "status": "Potential emerging interest",
+      "signals": ["Local LLM hardware benchmarking", "Python backend overlap"]
+    },
+    {
+      "topic": "Cloud Engineering",
+      "potential_score": 62,
+      "status": "Potential emerging interest",
+      "signals": ["Docker containerization mentions", "Distributed system scaling"]
+    },
+    {
+      "topic": "Cybersecurity",
+      "potential_score": 41,
+      "status": "Potential emerging interest",
+      "signals": ["Network layer curiosity", "Secure credential management"]
+    }
+  ],
+  "knowledge_gaps": [
+    {
+      "topic": "Database Fundamentals & Sharding",
+      "confidence": "Medium",
+      "reason": "Strong backend and architecture signals, but relatively low database query & indexing interaction history."
+    }
+  ],
+  "career_alignments": [
+    { "role": "Software Engineer", "match_score": 92, "category": "Core Match" },
+    { "role": "Backend Engineer", "match_score": 87, "category": "Specialization" },
+    { "role": "Cloud Engineer", "match_score": 61, "category": "Adjacent" },
+    { "role": "AI Engineer", "match_score": 58, "category": "Exploration" }
+  ],
+  "learning_path": [
+    { "step": 1, "topic": "Java & OOP Core", "difficulty": "Beginner", "status": "Completed", "estimated_time": "15 mins", "reel_title": "Java Fundamentals & Collections" },
+    { "step": 2, "topic": "DSA (Arrays & Pointers)", "difficulty": "Intermediate", "status": "In Progress", "estimated_time": "30 mins", "reel_title": "Two-Pointer Technique & LeetCode" },
+    { "step": 3, "topic": "Backend REST APIs", "difficulty": "Intermediate", "status": "Next Up", "estimated_time": "45 mins", "reel_title": "REST API Architecture & HTTP Codes" },
+    { "step": 4, "topic": "Databases & Indexing", "difficulty": "Intermediate", "status": "Upcoming", "estimated_time": "1 hour", "reel_title": "SQL Injection & Index Optimization" },
+    { "step": 5, "topic": "System Design & Scaling", "difficulty": "Intermediate", "status": "Upcoming", "estimated_time": "1.5 hours", "reel_title": "How Backend Engineers Think About System Design" },
+    { "step": 6, "topic": "Cloud & Docker Deployment", "difficulty": "Advanced", "status": "Upcoming", "estimated_time": "2 hours", "reel_title": "Deploying Containers with Docker & ECS" }
+  ]
+}
